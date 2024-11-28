@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(3, 80, 50);
+}
+
+.logo img{
+    width: 100px;
+    position: absolute;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(4, 100, 63);
+    padding: 30px;
+    gap: 600px;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+header .navbar ul li a{
+    font-weight: 600;
+    padding: 10px;
+    color: white;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    color: yellow;
+    background: rgb(3, 80, 50);
+    transition: .5s;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: rgb(4, 100, 63);
+    display: none;
+    margin-top: 5px;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+    margin-top: 5px;
+}
+
+header .navbar ul li:focus-within > ul, 
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+footer{
+    border-top: 2px solid rgb(2, 68, 43);
+    background: rgb(3, 80, 50);
+    padding: 20px;
+}
+
+.footer-content h1{
+    text-align: center;
+    color: yellow;
+    font-size: 18px;
+}
+
+.footer-content h2{
+    text-align: center;
+    color: yellow;
+    font-size: 10px;
+}
+
+.Title{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Titlebody{
+    text-align: center;
+    animation: zoomIn;
+    animation-duration: 3s;
+}
+
+.Titlebody h1{
+    color: yellow;
+    font-size: 60px;
+}
+
+.about{
+    background: rgb(3, 80, 50);
+    min-height: 100vh;
+    padding: 60px;
+}
+
+.aboutbody{
+    background: white;
+    min-height: 100vh;
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.692);
+    padding: 40px;
+    border-radius: 3px;
+    animation: fadeInLeft;
+    animation-duration: 3s;
+}
+
+.aboutTitle h1{
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    margin: 40px;
+}
+
+.about img{
+    width: 1000px;
+    height: 500px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.aboutbody .body{
+    line-height: 1.8;
+    letter-spacing: 1px;
+    padding: 20px;
+    word-spacing: 1px;
+    border-bottom: 5px solid rgb(212, 210, 210);
+}
+
+.president{
+    border-bottom: 5px solid rgb(212, 210, 210);
+  
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.row .column1 h1{
+    color: green;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.row .column2 img{
+    width: 400px;
+}
+
+.mission{
+    margin: 50px;
+}
+
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.rows .col-1 h1{
+    color: green;
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.rows .col-1 p{
+    line-height: 1.8;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.rows .col-2 h1{
+    color: green;
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.rows .col-2 p{
+    line-height: 1.8;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.see{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.see a{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.see a:hover{
+    color: green;
+    transition: .5s;
+}
+
+.uniforms{
+    border-top: 5px solid rgb(212, 210, 210);
+}
+
+.uni_title{
+    text-align: center;
+    color: green;
+    font-size: 30px;
+    margin: 50px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.columns1 img{
+    width: 300px;
+}
+.columns2 img{
+    width: 300px;
+}
+.columns3 img{
+    width: 300px;
+}
+
+.map{
+    padding: 20px;
+    border-top: 5px solid rgb(212, 210, 210);
+}
+
+.map .mapTitle h1{
+    text-align: center;
+    color: green;
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+@media  screen and (max-width: 991px) {
+    header{
+        gap: 800px;
+    }
+
+    header label{
+        display: initial;
+    }
+    
+    header .navbar{
+        width: 400px;
+        position: absolute;
+        top: 10%; left: 60%; right: 0;
+        background: rgb(4, 100, 63);
+        display: none;
+        padding: 20px;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li a{
+        padding: 20px;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: rgb(4, 100, 63);
+    }
+
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+    .aboutbody img{
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    header{
+        font-size: 20px;
+    }
+
+    header label{
+        display: initial;
+
+    }
+    
+    header .navbar{
+        width: 225px;
+        position: absolute;
+        top: 10%; left: 38%; right: 0;
+        background: rgb(4, 100, 63);
+        display: none;
+        padding: 20px;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li a{
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: rgb(4, 100, 63);
+    }
+
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+    header{
+        width: 360px;
+        gap: 300px;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .Title{
+        width: 360px;
+    }
+
+    .Titlebody h1{
+        font-size: 30px;
+        margin-bottom: -20px;
+    }
+
+    .about{
+        padding: 0;
+    }
+
+    .aboutbody{
+        width: 360px;
+        padding: 10px;
+    }
+
+    .about img{
+        width: 300px;
+        margin-left: 20px;
+        height: 300px;
+    }
+
+    .body{
+        padding: 0;
+    }
+
+    .aboutTitle{
+        margin-top: 100px;
+    }
+
+    .aboutbody .body p{
+        font-size: 15px;
+    }
+
+    .row{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row .column1 h1{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: -2px;
+    }
+
+    .row .column1 h3{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .row .column2 img{
+        margin-top: 30px;
+        width: 300px;
+        margin-left: 2px;
+    }
+
+    .mission .rows{
+        display: block;
+    }
+
+    .col-2{
+        margin-top: 50px;
+    }
+
+    .map img{
+        width: 350px;
+        margin-left: -29px;
+    }
+
+    footer{
+        width: 360px;
+    }
+
+
+}
